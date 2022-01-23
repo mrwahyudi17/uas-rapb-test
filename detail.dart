@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
-import 'sql_helper.dart';
 import 'guestbook.dart';
+import 'sql_helper.dart';
 
 class DetailPage extends StatefulWidget {
   final int id1;
@@ -41,11 +41,11 @@ class _DetailPageState extends State<DetailPage> {
               padding: EdgeInsets.all(10.0),
               shrinkWrap: true,
               children: [
-                Text('ID : ${widget.id1}'),
-                Text('Nama : ${widget.nama1}'),
-                Text('Email : ${widget.email1}'),
-                Text('No. Telp : ${widget.notelp1}'),
-                Text('Pesan : ${widget.pesan1}'),
+                Text('ID: ${widget.id1}'),
+                Text('Nama: ${widget.nama1}'),
+                Text('Email: ${widget.email1}'),
+                Text('No. Telp: ${widget.notelp1}'),
+                Text('Pesan: ${widget.pesan1}'),
               ],
             )
           ],
