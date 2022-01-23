@@ -1,7 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:uas_test1/detail.dart';
+import 'package:uas_rapb_mrw/detail.dart';
 import 'sql_helper.dart';
+import 'detail.dart';
 
 class GuestBook extends StatefulWidget {
   const GuestBook({Key? key}) : super(key: key);
@@ -207,11 +208,12 @@ class _GuestBookState extends State<GuestBook> {
           : ListView.builder(
               itemCount: _journals.length,
               itemBuilder: (context, index) => Card(
-                color: Colors.orange[200],
+                color: Colors.blue[200],
                 margin: const EdgeInsets.all(15),
                 child: ListTile(
-                    title: Text(_journals[index]['title']),
-                    subtitle: Text(_journals[index]['description']),
+                    title: Text(_journals[index]['nama']),
+                    subtitle: Text(_journals[index]['email']),
+                    
                     trailing: SizedBox(
                       width: 150,
                       child: Row(
@@ -255,4 +257,3 @@ class _GuestBookState extends State<GuestBook> {
     );
   }
 }
-
